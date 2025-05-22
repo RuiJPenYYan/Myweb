@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="bgk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyWorks</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.4;
+        }
+        .del {
+            color: red;
+            user-select: none;
+        }
+        .item {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 15px; 
+            box-shadow: rgba(149,157,165,0.2) 0px 8px 20px;
+        }
+        .Todo-button {
+            width: 100px;
+            height: 52px;
+            line-height: 52px;
+            border-radius: 0 15px 15px 0;
+            text-align: center;
+            background: linear-gradient(to right,rgb(194, 39, 255),rgb(12, 12, 194));
+            color: #ffff;
+            cursor: pointer;
+            user-select: none;
+        }
+        .Todo-input {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 15px 0 0 15px;
+        }
+        .Todo-from {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        body {
+            background: linear-gradient(to right,rgb(194, 39, 255),rgb(12, 12, 194));
+        }
+        .Todo-app {
+            width: 98%;
+            height: 500px;
+            background-color: #ffff;
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-left: 1%;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="Todo-app">
+        <div class="title">Daily Works</div>
+
+        <div class="Todo-from">
+            <input class="Todo-input "type="text" placeholder="Add a todo">
+            <div class="Todo-button">Add Todo</div>
+        </div>
+
+        <div class="item completed">
+            <div>
+              <input type="checkbox">
+              <span class="name">³Ô·¹</span>
+            </div>
+
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div>
+              <input type="checkbox">
+              <span class="name">³Ô·¹</span>
+            </div>
+
+            <div class="del">del</div>
+        </div>
+        <div class="item">
+            <div>
+              <input type="checkbox">
+              <span class="name">³Ô·¹</span>
+            </div>
+
+            <div class="del">del</div>
+        </div>
+    </div>
+</body>
+</html>
